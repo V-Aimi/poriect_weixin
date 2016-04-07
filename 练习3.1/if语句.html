@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<p>如果时间早于16:00，就会获得问候“Good day”</p>
+		<button onclick="myFunction()">点击事件</button>
+		<p id="demo"></p>
+		<p>点击下面的按钮来显示今天是周几：</p>
+
+<button onclick="myFunction1()">点击这里</button>
+
+<p id="demo"></p>
+
+<p>点击下面的按钮，会显示出基于今日日期的消息：</p>
+
+<button onclick="myFunction3()">点击这里</button>
+
+<p id="demo"></p>
+	</body>
+	<script type="text/javascript">
+		function myFunction(){
+			
+			var x="";
+			var time = new Date().getHours();
+			if(time<15){
+				x="Good day"
+			}else{
+				
+				x="Good eveing"
+			}
+			document.getElementById("demo").innerHTML=x;
+			
+			
+		}
+		
+		
+		function myFunction1()
+		{
+		var x;
+		var d=new Date().getDay();
+		switch (d)
+		  {
+		  case 0:
+		    x="Today it's Sunday";
+		    break;
+		  case 1:
+		    x="Today it's Monday";
+		    break;
+		  case 2:
+		    x="Today it's Tuesday";
+		    break;
+		  case 3:
+		    x="Today it's Wednesday";
+		    break;
+		  case 4:
+		    x="Today it's Thursday";
+		    break;
+		  case 5:
+		    x="Today it's Friday";
+		    break;
+		  case 6:
+		    x="Today it's Saturday";
+		    break;
+		  }
+		document.getElementById("demo").innerHTML=x;
+		}
+	</script>	
+	
+	
+	<!--default 关键词-->
+	
+	
+	<script type="text/javascript">
+		function myFunction3()
+		{
+		var day=new Date().getDay();
+		switch (day)
+		{
+		case 6:
+		  x="Today it's Saturday";
+		  break;
+		case 0:
+		  x="Today it's Sunday";
+		  break;
+		default:
+		  x="Looking forward to the Weekend";
+		}
+		document.getElementById("demo").innerHTML=x;
+		}
+	</script>
+</html>

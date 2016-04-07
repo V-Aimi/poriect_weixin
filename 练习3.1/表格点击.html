@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{width:200px;height: 200px;background-color:#5B76DB ;display: none;position: absolute;top: 15%;left: 50%;}
+		</style>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(e){
+				
+		$("#img").mousemove(function(e){
+			$("#box").css("display","block")
+		})
+		$("#img").mouseout(function(e){
+			$("#box").css("display","none")
+		})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<table border="" cellspacing="" cellpadding="" style="position: relative;">
+			<tr><th><img src="img/1.jpg" alt="" width="30%" id="img"/></th></tr>
+		</table>
+		<div id="box">
+			
+		</div>
+	</body>
+	
+</html>

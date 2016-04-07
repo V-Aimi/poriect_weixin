@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<!--JavaScript中的几乎所有事务都是对象：字符串、数字、数组、日期、函数等等-->
+	<!--本例子创建名为“person”的对象，并未其添加四个属性-->
+	<script type="text/javascript">
+			person=new Object();
+			person.firstname = 'Bill';
+			person.lastname = 'Gates';
+			person.age = 56;
+			person.eyecolor ='blue';
+			document.write(person.firstname +' is ' +person.age +'years old.')
+			
+			var message = 'hello world!';
+			var x = message.length;
+			  alert(x)
+			  
+			  
+			var message1 ="hello world!"
+			var x=message1.toLowerCase();
+			
+			//toUpperCase()方法用于把字符串转换为大写
+			//toLowerCase()方法用于把字符串转换为小写
+			
+			alert(x)
+		</script>
+		
+		
+		<!--访问对象的属性
+			
+			objectName.porpertName
+			
+			本例子使用string对象的length属性来查找字符串的长度
+			var message = 'hello world!';
+			var x = message.length;
+			
+			结果：x=12  (取字符串message的长度)
+						
+		-->
+				
+		
+		<!--访问对象的方法
+			
+			objectName.methodName()
+			
+			var message ="hello world!"
+			var x=message.toUpperCase();
+			
+			结果：hello world！				
+			
+			
+		-->
+</html>

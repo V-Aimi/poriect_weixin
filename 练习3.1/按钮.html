@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.file {
+			    background-color: #6f89ea;		
+			    background-position: 12px 6px;
+			    background-repeat: no-repeat;
+			    border-radius: 4px;
+			    color: #fff;
+			    cursor: pointer;
+			    display: inline-block;
+			    font-size: 14px;
+			    height: 20px;
+			    line-height: 20px;
+			    overflow: hidden;
+			    padding: 8px 12px;
+			    position: relative;
+			    text-align: right;
+			    text-decoration: none;
+			    text-indent: 0;
+			    width: 84px;
+			}
+			.file input {
+			    position: absolute;
+			    font-size: 100px;
+			    right: 0;
+			    top: 0;
+			    opacity: 0;
+			}
+			.file:hover {
+			    background: #5b76db;
+			    text-decoration: none;
+			    
+			    background-position: 12px 6px;
+			    background-repeat: no-repeat;
+			    cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post" enctype="multipart/form-data"> 
+		<label>上传截图</label> 
+		
+		<div class="mdiv" id="mdiv"> 
+		<div class="iptdiv" >
+		<a class="file" >选择文件<input type="file" name="file" class="ipt"  /></a><a>未选择任何文件</a><a href="javascript:addimg()" style="margin-left: 100px;">+</a> 
+		</div> 
+		</div> 
+		<input type="submit" name="submit" value="上传图片" /> 
+		</form> 
+		<script type="text/javascript" > 
+		$(document).ready(function(){
+		   bindListener();
+//		   $("input[name^=file]").live("change",function(){
+//		   		var val = $(this).val();
+//		   		$(this).parent().next().text(val);
+//		   		 
+//		   });
+//		   $("input[name^=file]").change(function(){
+//		   		var val = $(this).val();
+//		   		$(this).parent().next().text(val);
+//		   		 
+//		   });
+
+			$('body').on('change','input[name^=file]',function(){
+		   		var val = $(this).val();
+		   		$(this).parent().next().text(val);
+			});
+		});
+		
+		function addimg(){ 
+		   
+		$("#mdiv").append('<div class="iptdiv" ><a class="file" >选择文件<input type="file" name="file" class="ipt"  /></a><a>未选择任何文件</a><a href="javascript:addimg()" style="margin-left: 100px;">+</a></div>');
+//		   $("input[name^=file]").change(function(){
+//		   		var val = $(this).val();
+//		   		$(this).parent().next().text(val);
+//		   		 
+//		   });
+//		   
+
+		
+		// 为新元素节点添加事件侦听器
+		//download jb51.net
+		   bindListener();
+		} 
+		// 用来绑定事件(使用unbind避免重复绑定)
+		function bindListener(){
+		     $("a[name=rmlink]").unbind().click(function(){
+		         $(this).parent().remove(); 
+		     })
+		     
+		}
+		</script>
+	</body>
+	
+	
+</html>
