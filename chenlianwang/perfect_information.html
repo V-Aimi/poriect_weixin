@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>公众号UI</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/cyagps.css" />
+
+</head>
+<body id="perinfo">
+        <section class="wrap">
+        <div class="body">
+    <form>
+        <table class="per_form">
+        <tbody>
+                <tr>
+                    <td><b class="check_mt10">车辆名称</b></td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="text"  placeholder="请输入车辆名称"  style="background-color:#f0f0f0;" />
+                    <input type="text"  placeholder="请输入车辆名称"  style="background-color:#fff;display:none;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b class="check_mt10">车牌号码</b></td>
+                </tr>
+                <tr>
+                    <td >
+                        <select style="width:25%;float:left;margin-right:0.8rem;">
+                            <option>粤</option>
+                            <option>奥迪</option>
+                            <option >劳斯莱斯</option>
+                            <option>兰博基尼</option>
+                        </select>
+                    
+                        <input type="text"  placeholder="请输入全部发动机号码"  style="width:67%;float:left;"/>
+                        <div class="required" style="width:0;float:left;padding: 0.56rem 0 0 0.2rem;">*</div>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td><b class="check_mt10">车辆品牌</b></td>
+                </tr>
+                <tr>
+                    <td>
+                    <select style="float:left;">
+                        <option>请输入车型</option>
+                        <option>奥迪</option>
+                        <option >劳斯莱斯</option>
+                        <option>兰博基尼</option>
+                    </select>
+                    <span class="required" style="width:0;float:left;padding: 0.56rem 0 0 0.2rem;">*</span></td>
+                </tr>
+                <tr>
+                    <td><b class="check_mt10">车辆型号</b></td>
+                </tr>
+                <tr>
+                    <td>
+                    <select style="float:left;">
+                        <option selected>请选择车型</option>
+                        <option >劳斯莱斯</option>
+                        <option>兰博基尼</option>
+                    </select>
+                    <span class="required" style="width:0;float:left;padding: 0.56rem 0 0 0.2rem;">*</span></td>
+                </tr>
+                <tr>
+                    <td><b class="check_mt10">发动机号</b></td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="text" id="date-start" name="dstart" placeholder="请输入全部发动机号码"  />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><b class="check_mt10">车架号</b></td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="text"  placeholder="请输入车架号"  />
+                    </td>
+                </tr>
+        
+
+        </tbody>
+   
+        
+    </table>
+    <!-- 错误提示信息 -->
+        <div class="per_errortxt">*为必填</div>
+
+    <!-- 添加设备 -->
+                <div class="perbtn">
+                    <input type="submit" value="提交"  class="button btn-blue" />
+
+                </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

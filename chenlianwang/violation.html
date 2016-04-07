@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>公众号UI</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/cyagps.css" />
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".body_up div a").click(function(event) {
+
+                var index = $(this).attr("index");
+                $(".body_up div a").each(function(index, val) {
+                    $(this).removeClass('active');
+                });
+                $(this).addClass('active');
+
+                $("#phcontent ul").css("display","none");
+                $("#phcontent ul:nth-of-type(" + index +")").css("display","block");
+
+            });
+
+            $("#phcontent ul>li:nth-of-type(2)").click(function(event) {
+                $(this).find('input').addClass('get').removeClass('geton')
+            });
+
+        })
+      
+    </script>
+
+</head>
+<body id="violation">
+        <section class="wrap" style="width:100%;height:100%;position:relative;">
+            <ul>
+                <li>
+                        <div id="img_label_box">
+                            <div class="img_label"></div>
+                            <p>离远点儿</p>
+                            <div id="address">
+                                <span style="float:left;">广东深圳市深南大道东一巷</span><span style="float:right;">1小时前</span>
+                            </div>
+                        </div>
+                        <div id="violation_box"></div>
+                        <div id="violation_body">
+                            <div id="plate">
+                                <img src="" alt=""  class="plate"/><b>压实线行驶</b>
+                            </div>
+                            <div class="violation_txt">
+                                <p class="plate_txt" style="float:left;text-align:right">违章地点：</p><p style="float:left;">深南大道东一巷</p>
+                            </div>
+                            <div class="violation_txt">
+                                <p class="plate_txt" style="float:left;text-align:right;">违章时间：</p><p style="float:left;display:inline;">2016-03-12&nbsp</p><p>12:43:31</p>
+                            </div>
+                            <div class="vio_btn">
+                                <input type="button" value="待审核" />
+                            </div>
+                        </div>
+                </li>
+                <li>
+                        <div id="img_label_box">
+                            <div class="img_label"></div>
+                            <p>离远点儿</p>
+                            <div id="address">
+                                <span style="float:left;">广东深圳市深南大道东一巷</span><span style="float:right;">1小时前</span>
+                            </div>
+                        </div>
+                        <div id="violation_box"></div>
+                        <div id="violation_body">
+                            <div id="plate">
+                                <img src="" alt=""  class="plate"/><b>压实线行驶</b>
+                            </div>
+                            <div class="violation_txt">
+                                <p class="plate_txt" style="float:left;text-align:right">违章地点：</p><p style="float:left;">深南大道东一巷</p>
+                            </div>
+                            <div class="violation_txt">
+                                <p class="plate_txt" style="float:left;text-align:right;">违章时间：</p><p style="float:left;display:inline;">2016-03-12&nbsp</p><p>12:43:31</p>
+                            </div>
+                            <div class="vio_btn">
+                                <input type="button" value="待审核" />
+                            </div>
+                        </div>
+                </li>
+            </ul>
+
+        </section>
+
+</body>
+
+</html>

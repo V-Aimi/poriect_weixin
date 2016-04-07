@@ -1,0 +1,75 @@
+/* 基于 根字号 25px */
+#record {
+  background-color: #dfdfdf;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.56rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow-x: hidden;
+}
+.record_body {
+  margin-top: 0.8rem;
+  overflow: hidden;
+  padding: 0 0 0 1rem;
+}
+.record_body ul {
+  overflow: hidden;
+}
+.record_body li {
+  float: left;
+  position: relative;
+  width: 19.6rem;
+}
+.record_body li > div:nth-of-type(1) {
+  display: inline-block;
+  height: 8rem;
+  border-right: 0.12rem solid #13c5fe;
+  margin-right: 1.2rem;
+  font-size: 1.2rem;
+  width: 4.12rem;
+  position: relative;
+  float: left;
+  color: #adadad;
+}
+.line {
+  position: absolute;
+  right: -0.64rem;
+  top: -0.12rem;
+}
+.arr {
+  background-color: #7bd3f9;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1.2rem;
+  position: relative;
+  width: 1.2rem;
+}
+.arr::before {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 0.6rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.6rem;
+}
+.boxtxt {
+  float: left;
+  padding: 0.8rem;
+  background-color: #fff;
+  font-size: 0.8rem;
+  color: #4e4e4e;
+}
+.record_body li:nth-of-type(3) > div.nomoren {
+  float: left;
+  padding: 0.6rem;
+  background-color: #fff;
+  font-size: 0.8rem;
+  color: #4e4e4e;
+}
+.record_body li:nth-last-of-type(1) > div:nth-of-type(1) {
+  border: none;
+}

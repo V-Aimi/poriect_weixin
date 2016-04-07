@@ -1,0 +1,194 @@
+/* 基于 根字号 25px */
+#completes {
+  margin: 0 auto;
+  color: #000;
+  font-size: 0.56rem;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  background-color: #dfdfdf;
+}
+.completes_header {
+  height: 3.44rem;
+  color: #39acde;
+  font-size: 1.2rem;
+  line-height: 3.44rem;
+  background-color: #fff;
+  text-align: center;
+}
+.completes_content {
+  background-color: #dfdfdf;
+  overflow-x: hidden;
+  position: relative;
+}
+.list {
+  width: 100%;
+  margin-bottom: 2.24rem;
+  border-collapse: collapse;
+}
+table.list td .button {
+  min-width: 1.2rem;
+  height: 2.48rem;
+  width: 3.6rem;
+}
+table.list tbody tr {
+  vertical-align: middle;
+  border-bottom: 1px solid #bbbbbb;
+}
+table.list tbody td {
+  vertical-align: middle;
+}
+table.list td {
+  padding: 0.6rem;
+  font-size: 0.6rem;
+}
+.list tr > td:nth-of-type(1) {
+  box-sizing: border-box;
+  color: #020202;
+  font-size: 1.2rem;
+}
+.list tr > td:nth-of-type(2) {
+  font-size: 1.2rem;
+}
+.list tr > td:nth-last-of-type(1) {
+  padding-right: 1.04rem;
+}
+.button {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.12rem;
+  text-indent: 0px;
+  margin: 0.12rem 0;
+  padding: 0.2rem 0;
+  display: block;
+  color: #FFF;
+}
+.btn-defaul {
+  border-radius: 0.2rem;
+  border: 2px solid #0bb6e7;
+  background-color: #dfdfdf;
+  color: #0bb6e7;
+  font-size: 0.88rem;
+}
+.btn-choice {
+  border-radius: 0.2rem;
+  border: 2px solid #0bb6e7;
+  background-color: #fff;
+  color: #0bb6e7;
+  font-size: 0.88rem;
+}
+.btn-cpdanger {
+  background-color: #ca333d;
+  background-image: url("../image/delete.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-color: #bd362f #bd362f #802420;
+  border-radius: 0.16rem;
+  color: #fff;
+  padding: 0.4rem 0.68rem;
+  border: 1px solid #a41c25;
+  width: 0.96rem;
+  height: 0.96rem;
+  background-size: 30%;
+}
+.btn-cpblue {
+  background-color: #0bb6e7;
+  background-image: url("../image/eidt.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 0.88rem;
+  border: 1px solid #1f94c3;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: 50%;
+}
+.btn-addblue {
+  background-color: #1eaae2;
+  width: 100%;
+  font-size: 0.88rem;
+  color: #fff;
+  border: 1px solid #1f94c3;
+}
+.addbutton {
+  margin: 0.2rem 0;
+  text-align: center;
+  padding: 0 1.04rem;
+}
+.addbutton input {
+  height: 2.48rem;
+  font-size: 1.28rem;
+  cursor: pointer;
+}
+.point {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1rem;
+  left: 35%;
+  padding: 0.6rem 0.4rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-35%, -50%);
+  box-sizing: border-box;
+  display: none;
+}
+#bg {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: .70;
+  filter: alpha(opacity=70);
+}
+#boxshow {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 16rem;
+  height: 8.4rem;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.boxshow_txt {
+  font-size: 0.8rem;
+  border-bottom: 1px solid #04b3e0;
+  height: 5.2rem;
+  padding: 1.4rem;
+  text-align: center;
+}
+.cancel {
+  border-right: 1px solid #04b3e0;
+}
+.cancel {
+  float: left;
+  font-size: 1.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  width: 8rem;
+}
+.ensure {
+  float: left;
+  font-size: 1.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  width: 7.2rem;
+}
+.cancel a,
+.ensure a {
+  cursor: pointer;
+  color: #08bbe4;
+  font-size: 0.96rem;
+}

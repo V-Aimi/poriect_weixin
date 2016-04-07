@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>公众号UI</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/cyagps.css" />
+    <script src="js/jquery.min.js"></script>
+    <script>
+      function option(){
+        $(".hide_box dl").css("display","block")
+
+      }
+      $(document).ready(function(){
+
+        $(".hide_box dl dd").click(function(event) {
+          
+        $(this).addClass('curr').siblings().removeClass('curr')
+
+      });
+
+      })
+    </script>
+
+</head>
+<body id="pick">
+        <section class="wrap" id="pic_bg">
+          
+            <div class="pick_txt">
+            <ul>
+                <li>车辆名称</li>
+                <li onclick="option()">我的车辆</li>
+                <div class="hide_box">
+                    <dl>
+                        <dd>奥迪</dd>
+                        <dd>兰博基尼</dd>
+                        <dd>劳斯莱斯</dd>
+                    </dl>
+                </div>
+                <li>点击右上角将此车辆名称发送给您的好友，收到您的消息后可来接您</li>
+            </ul>
+
+
+            </div>  
+          
+            
+
+        </section>
+
+</body>
+</html>

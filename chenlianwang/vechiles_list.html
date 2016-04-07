@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>车辆概况（车辆未连接）</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/cyagps.css" />
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".vechiles_up ul:nth-of-type(1) li").click(function(event) {
+               
+               $(this).find('span').toggleClass('ve_line')
+            });
+        
+
+        })
+
+    </script>
+  
+
+</head>
+<body id="vechiles">
+        <section class="wrap">
+            <div class="vechiles_up">
+                <ul>
+                    <li><span class="ve_line">车辆概况</span></li>
+                    <li><span>车况检测</span></li>
+                </ul>
+
+                <div id="va_car"></div>
+                <ul>
+                    <li>
+                        <div class="car"></div>
+                        <div class="audi_nolink" style="color:#d67f21;">车辆未连接</div>
+                    </li>
+                    <li style="margin-bottom:1.2rem;margin-top:1.2rem;">
+                        <div class="tank"></div><div class="audi" style="color:#747474;">平时耗油<b style="color:#747474;">0.0</b>L/100km</div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="vechiles_down">
+                
+            <ul>
+                <li>
+                    <div class="l_cheng"></div>
+                    <div style="text-align:center;">
+                        <p style="font-size:0.88rem;">总里程</p>
+                        <b style="font-size:1.2rem;color:#747474;;">0</b>
+                        <p style="font-size:0.8rem;">km</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l_average"></div>
+                    <div style="text-align:center;">
+                        <p style="font-size:0.88rem;">平均油耗</p>
+                        <b style="font-size:1.2rem;color:#747474;;">0</b>
+                        <p style="font-size:0.8rem;">km</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l_time"></div>
+                    <div style="text-align:center;">
+                        <p style="font-size:0.88rem;">最长驾驶时间</p>
+                        <b style="font-size:1.2rem;color:#747474;;">0</b>
+                        <p style="font-size:0.8rem;">h</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l_speed"></div>
+                    <div style="text-align:center;">
+                        <p style="font-size:0.88rem;">最高时速</p>
+                        <b style="font-size:1.2rem;color:#747474;;">0</b>
+                        <p style="font-size:0.8rem;">km/h</p>
+                    </div>
+                </li>
+            </ul>
+
+            </div>
+
+            <!-- 已连接 -->
+            <div class="linkbtn">
+                    <input type="submit" value="连接车辆"  class="button btn-checkblue" style="padding-right: 4.5rem;"/>
+
+                </div>
+
+
+        </section>
+
+</body>
+</html>

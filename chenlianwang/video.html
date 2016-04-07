@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>公众号UI</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/cyagps.css" />
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".body_up div a").click(function(event) {
+
+                var index = $(this).attr("index");
+                $(".body_up div a").each(function(index, val) {
+                    $(this).removeClass('active');
+                });
+                $(this).addClass('active');
+
+                $("#phcontent ul").css("display","none");
+                $("#phcontent ul:nth-of-type(" + index +")").css("display","block");
+
+            });
+
+            $("#phcontent ul>li:nth-of-type(2)").click(function(event) {
+                $(this).find('input').addClass('get').removeClass('geton')
+            });
+
+            // 直接跳转页面效果
+            $("#l_video li:nth-of-type(1)").click(function(event) {
+                
+                window.location.href="videolist.html"
+            });
+            $("#l_photo li:nth-of-type(1)").click(function(event) {
+                
+                window.location.href="photoslist.html"
+            });
+
+        })
+      
+    </script>
+
+</head>
+<body id="photos">
+        <section class="wrap" style="width:100%;height:100%;position:relative;">
+        <div class="photos-content">
+            <div id="resDiv">
+                <div class="loading">
+                正在连接   
+                    <div class="loader-inner pacman">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                
+                <!-- 上传成功  -->       <!-- 正在上传 --><!-- 正在拍摄 -->
+                <!-- <br />
+                <br />
+                <img src="image/success.png" alt="" id="res_success" /> -->
+                </div>
+            </div>
+            
+            <div id="phcontent" style="background-color:#000;">
+                <div  class="body_up">
+                    <div><a index="1">视频</a></div>
+                    <div><a index="2">拍照</a></div>
+                </div>
+                <ul  id="l_video">
+                    <li onclick="videolist.html"><input type="button" title="历史视频" id="goHistoryPhotos"></li>
+                    <li><input type="button" title="摄像" class="geton"></li>
+                    <li><input type="button" title="获取视频"  id="goVideo"></li>
+                </ul>
+                <ul id="l_photo" style="display:none;">
+                    <li onclick="photoslist.html"><input type="button" title="历史照片" id="goHistoryPhotos"></li>
+                    <li><input type="button" title="拍照" class="geton"></li>
+                    <li><input type="button" title="获取照片" id="getPhoto"></li>
+                </ul>
+                
+                </div>
+            
+            </div>
+
+      </section>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>公众号UI</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/cyagps.css" />
+
+
+</head>
+<body id="check">
+        <section class="wrap">
+        <div class="body">
+    <form>
+        <table class="check_form">
+        <tbody>
+                <tr>
+                    <td><b class="check_mt10">选择车辆</b></td>
+                </tr>
+                <tr>
+                    <td>
+                    <select>
+                        <option selected>粤123456</option>
+                        <option >设备一</option>
+                        <option>设备二</option>
+                    </select>
+                    </td>
+                </tr>
+        
+                
+            <tr>
+                 <td><b class="check_mt10">开始日期</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text"  placeholder="请输入开始日期"  />
+                </td>
+            </tr>
+        <tr>
+            <td><b class="check_mt10">结束日期</b></td>
+        </tr>
+        <tr>
+            <td>
+            <input type="text"  placeholder="请输入结束日期"  /></td>
+        </tr>
+
+        </tbody>
+   
+        
+    </table>
+    <!-- 错误提示信息 -->
+        <div class="check_errortxt">所在日期没有轨迹信息，请选择日期!</div>
+
+    <!-- 添加设备 -->
+                <div class="addcheckbtn">
+                    <input type="submit" value="开始查询"  class="button btn-checkblue" />
+
+                </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+        </section>
+
+</body>
+</html>
