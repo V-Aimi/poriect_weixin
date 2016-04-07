@@ -1,0 +1,88 @@
+/* CSS 初始化 */
+/* 1.清除浏览器默认样式 */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend {margin: 0; padding: 0; }
+/* 2.针对性处理 */
+fieldset {border: none; } 
+ol, ul {list-style: none; margin: 0 ; padding: 0; }
+textarea {resize: none; }
+img {border: none; /*img底部空白*/ vertical-align: middle; max-width: 100%; height: auto; width: auto\9;
+  /* ie8 */ -ms-interpolation-mode: bicubic; /*为了照顾ie图片缩放失真*/ }
+input, textarea {outline: none; }
+/* 谷歌浏览器表单元素外框 */
+/* 3.设置全局样式 */
+body {color: #666; font-size: 14px; font-family: "华文细黑"; line-height: 20px;max-width: 1920px;margin:0 auto;overflow-x: hidden;
+    overflow-y: scroll;}
+a {color:#f09560; text-decoration: none; }
+#container{width: 1200px;margin:0 auto;}
+/* 4.定义常用类 */
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix {*zoom: 1; }
+/*字体图标*/
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+/*导航*/
+#nav .nav-current{ position: absolute; bottom: -13px; height: 2px; width: 30px; height: 30px; background: url(../img/on.gif) no-repeat center top; }
+#header{width: 1920px;border-bottom: 1px solid #d9d9d9;height:70px;padding-left: 360px;box-sizing: border-box;line-height: 70px;}
+#logo{width: 201px;height: 46px;float: left;}
+#nav {width: 984px;height: 70px;float: left;position: relative;}
+#nav ul{overflow: hidden;}
+#nav ul li{float: right;margin-right: 90px;}
+#nav ul li a{color:#000;font-family: "华文细黑";font-size: 24px;}
+#nav .active a{color: #ef731b;}
+#iconfont{color: #ef731b; font-size: 32px; margin-left: 58px; margin-top: -2px; display: inline-block;cursor: pointer;}
+#shop{margin-right: 32px;float: right;}
+#shop a{display:inline-block;color:#ef731b;font-size: 20px;font-family: "微软雅黑";}
+#user{color:#f40;margin-right: 60px;font-size: 20px;font-family: "微软雅黑";float: right;}
+#user a{color:#000;}
+
+
+/*尾部*/
+#footer_baozhang{width: 1200px;height: 90px;background:#ee7419;}
+#footer_baozhang_up{overflow: hidden;}
+#footer_tuihuo{float: left;color:#fff;font-size: 18px;}
+#footer_baozhang_up li{width: 126px;height: 88px;float: left;color:#fff;font-size: 18px;text-align: center; } 
+#footer_huanhuo{float: left;color:#fff;font-size: 18px;margin-left: 200px;}
+#footer_baoxiu{float: left;color:#fff;font-size: 18px;}
+#tuihuo,#huanhuo,#baoxiu{width: 40px; height: 40px; vertical-align: middle; margin-top: 16px;}
+
+#footer_tuihuo{margin-left: 280px;}
+#footer_baoxiu{margin-left: 200px;}
+#copy{width: 1920px;height: 40px;background:#f9cdac;margin-top: -40px;}
+
+
+/*立即购买*/
+#main{width: 1920px;height: 683px;position: relative;}
+#main_btn{position: absolute;top:310px;left:44%;background:url(../img/but_buy.png) no-repeat;width: 171px;height: 58px;text-align: center;line-height: 55px;cursor: pointer;}
+#main_buy{font-size: 18px;font-family: "微软雅黑";color:#fff;}
+#main_img{margin-top: -4px;}
+#zhineng{position: absolute;top:380px;left:42%;font-size: 24px;font-family: "华文细黑";color:#c50000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
